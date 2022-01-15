@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test</title>
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/chitiet.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/menu-responsive.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/header.css">
+
+
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script src="lib/js/jquery-3.6.0.js"></script>
+	
+</head>
+<body>
+	
+	<div class="header">
+       <div class="header-top"></div>
+       <div class="flex-header">
+           <div class="header-logo">
+               <img src="images/user/logo.png" class="logo">
+               <img src="images/user/logo1.png" class="logo1">
+           </div>
+           <div class="header-list">
+               <ul class="list">
+                   <li><a href="user.html">Trang chủ</a></li>
+                   <li><a href="chitiet.html">Thuê người chơi</a></li>
+                   <li><a href="thue.html">Đang theo dõi</a></li>
+                   
+               </ul>
+           </div>
+           <div class="header-icons">
+               <div class="btn-icons">
+                   <a href=""><img src="images/user/search.png"></a>
+                   <a href="" class="message" data-toggle="modal" data-target="#message"><img src="images/user/messages.png"></a>
+                   <a href=""><img src="images/user/bell.png"></a>
+               </div>
+               <div class="btn-icons1">
+                   <a href=""><img src="images/chitiet/btn.svg"></a>
+                   <a href="" class="message" data-toggle="modal" data-target="#message"><img src="images/chitiet/btn1.svg"></a>
+                   <a href=""><img src="images/chitiet/btn2.svg"></a>
+               </div>
+               <div class="profile">
+                    <div class="dropdown">
+                      <button class="dropbtn">
+                          <img src="images/user/profile.png">
+                          <div class="dropbtn-profile">
+                              <p>HoangNguyen</p>
+                              <p><span>15,000</span> đ</p>
+                          </div>
+                      </button>
+                      <div class="dropdown-content">
+                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Nạp tiền</a>
+                            <a href="#">Rút tiền</a>
+                            <a href="lichsu.html">Lịch sử giao dịch</a>
+                            <a href="profile.html">Cài đặt tài khoản</a>
+                            <a href="#">Đăng xuất</a>
+                      </div>
+                    </div>
+               </div>
+            
+           </div>
+           <span class="nav-toggle">
+               <span></span>
+           </span>
+           
+       </div>   
+    </div>
+	<!-- end header -->
+	<div class="nav-content">
+		<div class="nav-content-top">
+		<div class="nav-content-profile">
+			<div> <img src="images/user/profile.png"></div>
+            <div class="dropbtn-profile">
+              <p>HoangNguyen</p>
+              <p><span>15,000</span> đ</p>
+            </div>
+		</div>
+		<div class="nav-content-list">
+			<ul>
+                <li><a href="user.html">Trang chủ</a></li>
+                <li><a href="chitiet.html">Thuê người chơi</a></li>
+                <li><a href="thue.html">Đang theo dõi</a></li>
+            </ul>
+		</div>
+	    </div>
+		<div class="text-center">
+			<button class="btn-logout">Đăng xuất</button>
+		</div> 
+    </div>
+	<!-- main container -->
+	  <!-- Modal -->
+<div class="modal fade admid" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">nạp tiền vào 5me.onl</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+              <img src="images/chitiet/close.svg">
+          </span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien1.png"></div>
+              <div class="modal-admid-item">
+                  <p>Chuyển khoản qua ngân hàng</p>
+                  <p>Miễn phí. Hỗ trợ 8:30 - 22:00 hàng ngày (trừ chủ nhật và các ngày lễ)</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien2.png"></div>
+              <div class="modal-admid-item">
+                  <p>Nạp tiền bằng thẻ cào Player Code</p>
+                  <p>Player code</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien3.png"></div>
+              <div class="modal-admid-item">
+                  <p>Nạp tiền bằng thẻ cào điện thoại</p>
+                  <p>Mobile card</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien4.png"></div>
+              <div class="modal-admid-item">
+                  <p>Thanh toán trực tiếp qua Internet Banking</p>
+                  <p>Phí 1.760đ + 3% giá trị nạp</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien5.png"></div>
+              <div class="modal-admid-item">
+                  <p>Thanh toán trực tiếp qua Visa / Master Card</p>
+                  <p>Phí 5.000đ + 7% giá trị nạp</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien6.png"></div>
+              <div class="modal-admid-item">
+                  <p>Thanh toán trực tiếp qua QR code</p>
+                  <p>Phí 3% giá trị nạp</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien7.png"></div>
+              <div class="modal-admid-item">
+                  <p>Thanh toán qua Paypal</p>
+                  <p>Phí tùy vào đại lý</p>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- sdsddddđ -->
+  <div class="container container-main">
+  	<div class="flex-main">
+	  	 <div class="main-header">
+	  	 	  <div class="main-header-background">
+	  	 	  </div>
+	  	 	  <img src="images/chitiet/face.svg" class="face">
+	  	 	  <div class="rating">
+	  	 	  	 <p>Nguyễn Thị Bảo Trang</p>
+	  	 	  	 <p><img src="images/chitiet/rating1.svg"></p>
+	  	 	  </div>
+	  	 	  <button class="follow"> + Theo dõi</button>
+	  	 	  <p id="point"><span>50,000</span> đ/h</p>
+	  	 	  <div class="button">
+	  	 	  	 <button type="button" class="thue" data-toggle="modal" data-target="#thue">thuê</button>
+
+	  	 	  	 <button type="button" class="donate" data-toggle="modal" data-target="#donate">donate</button>
+
+	  	 	  	 <button type="button" class="message" data-toggle="modal" data-target="#message"><i class="fa fa-comment" aria-hidden="true"></i>  Nhắn tin</button>
+	  	 	  </div>
+
+
+
+	<!-- Modal -->
+<div class="modal fade" id="thue" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Thuê</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+          	 <img src="images/chitiet/close.svg">
+          </span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <div class="modal-body-content">
+         	<div class="thue-img">
+         		<img src="images/chitiet/modalimg1.png">
+         	</div>
+         	<div class="thue-content">
+         		<p>trần thị thùy linh</p>
+         		<p><span>50,000</span> VNĐ</p>
+         	</div>
+         </div>
+         <div class="modal-body-main">
+         	<div class="modal-body-maintop">
+         		<div class="body-maintop">
+         			<p>Số giờ muốn thuê</p>
+         			<div class="body-maintop-btn">
+         				<p><span>10</span> giờ</p>
+         				<button class="thuebtn"><img src="images/chitiet/thue-.png"></button>
+         				<button class="thuebtn"><img src="images/chitiet/thue+.png"></button>
+         			</div>
+         		</div>
+         		<div class="body-maintop">
+         			<p><span>200,000</span> VNĐ</p>
+         		</div>
+         		<div class="body-maintop">
+        			<p>Số dư hiện tại</p>
+        			<p><span>0</span> VNĐ</p>
+        			<button class="btnadd"><!-- <i class="fa fa-plus" aria-hidden="true"></i> --><img src="images/chitiet/modalplus.svg"></button>
+        		</div>
+         	</div>
+         	<div class="modal-body-mainbottom">
+        		<textarea placeholder="Thêm lời nhắn" class="text-message"></textarea>
+        	</div>
+         </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">Thuê</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+	<!-- Modal -->
+<div class="modal fade" id="donate" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Donate</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="images/chitiet/close.svg"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-content">
+            <div class="content">
+            	<div class="content-top">
+            		<img src="https://th.bing.com/th/id/R.96fc0dcc159fc08d52a2b2971e1d8692?rik=Lca8aBiY38%2fi0Q&pid=ImgRaw&r=0">
+            		<img src="images/chitiet/modallink.svg">
+            		<img src="images/chitiet/modalimg1.png">
+            	</div>
+            	<div class="content-bottom">
+            		<div class="content-profile">
+            			<p>nguyễn đình trần thiện</p>
+            			<span>Người gửi(Bạn)</span>
+            		</div>
+            		<div class="content-profile">
+            			<p>trần thị thùy linh</p>
+            			<span>Người nhận</span>
+            		</div>
+            	</div>
+            </div>
+        </div>
+        <div class="modal-body-main">
+        	<div class="modal-body-maintop">
+        		<div class="body-maintop">
+        			<p>Số tiền muốn Donate</p>
+        			<p><span>150,000</span> VNĐ</p>
+        		</div>
+        		<div class="body-maintop">
+        			<p>Số dư hiện tại</p>
+        			<p><span>0</span> VNĐ</p>
+        			<button class="btnadd"><!-- <i class="fa fa-plus" aria-hidden="true"></i> --><img src="images/chitiet/modalplus.svg"></button>
+        		</div>
+        	</div>
+        	<div class="modal-body-mainbottom">
+        		<textarea placeholder="Thêm lời nhắn" class="text-message"></textarea>
+        	</div>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">Donate</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end modal -->
+
+ <div class="message-modal">
+ 	<div class="message-dialog">
+ 	  <div class="mess-header">
+ 		<h5 class="mess-title">
+	 		<img src="https://th.bing.com/th/id/R.849e2cadb026d2d0da3b5beaa61462b5?rik=Fb6FSMiFq5qNlg&pid=ImgRaw&r=0">
+            <p>nguyễn đình trần thiện</p>
+        </h5>
+        <button type="button" class="close message-close">
+          <span aria-hidden="true"><img src="images/chitiet/close.svg"></span>
+        </button>
+ 	  </div>
+ 	  <div class="mess-body">
+ 		<div class="message-main">
+	     	<div class="message-main-cont">
+	     		<div class="mess-img">
+	     			<img src="https://th.bing.com/th/id/R.a7ccae89dab79cd44722cfee868bfc79?rik=3Ulb1QcWMDSdWQ&pid=ImgRaw&r=0">
+	     		</div>
+	     		<div class="mess-cont">
+	     			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+	     			<p>22/10/2020 | 08:32</p>
+	     		</div>
+	     	</div>
+	     	<div class="message-main-cont">
+	     		<div class="mess-cont">
+	     			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+	     			<p>25/12/2020 | 10:55</p>
+	     		</div>
+	     		<div class="mess-img">
+	     			<img src="https://th.bing.com/th/id/OIP.lvwNzBWfwI1SorKXHh2GkgHaJP?pid=ImgDet&rs=1">
+	     		</div>
+	     	</div>
+	     	<div class="mess-input">
+	     		<div class="messinput">
+	     			<div class="messinput-cont">
+	     				<div class="messinput-img">
+	     					<img src="https://th.bing.com/th/id/R.a7ccae89dab79cd44722cfee868bfc79?rik=3Ulb1QcWMDSdWQ&pid=ImgRaw&r=0">
+	     				</div>
+	     			    <input type="text" name="message-text" placeholder="Nhập tin nhắn" class="message-text">
+	     			</div>
+	     			<div class="messinput-link">
+	     				<a href="#">
+	     					<i class="fa fa-paperclip" aria-hidden="true"></i>
+	     				</a>
+	     				<a href="#">
+	     					<i class="fa fa-paper-plane" aria-hidden="true"></i>
+	     				</a>
+	     			</div>
+	     		</div>
+	     	</div>
+ 	    </div>
+      </div>
+    </div>
+</div>
+
+ <script type="text/javascript">
+ 	$(".message").click(function(){
+	  $(".message-modal").addClass("mess-show");
+	});
+	$(".message-close").click(function(){
+	  $(".message-modal").removeClass("mess-show");
+	});
+ </script>
+<!-- end modal -->
+	  	 	  <div class="paramater">
+	  	 	  	 <div class="paramater-item">
+	  	 	  	 	  <p>Số người theo dõi</p>
+	  	 	  	 	  <p>320</p>
+	  	 	  	 </div>
+	  	 	  	 <div class="paramater-item">
+	  	 	  	 	  <p>Số giờ được thuê</p>
+	  	 	  	 	  <p>1862</p>
+	  	 	  	 </div>
+	  	 	  	 <div class="paramater-item">
+	  	 	  	 	  <p>Tỉ lệ hoàn thành</p>
+	  	 	  	 	  <div class="progress1">
+	  	 	  	 	  	<p id="progress"></p>
+	  	 	  	 	    <p>96%</p>
+	  	 	  	 	  </div>
+	  	 	  	 </div>
+	  	 	  	 <div class="paramater-item">
+	  	 	  	 	  <p>Thiết bị</p>
+	  	 	  	 	  <p><i class="fa fa-camera" aria-hidden="true" style="padding-right: 13.33px;"></i><i class="fa fa-microphone" aria-hidden="true"></i></p>
+	  	 	  	 </div>
+	  	 	  </div>
+	  	 </div>
+	  	 <div class="main-content">
+	  	 	  <div class="main-flex-content">
+	  	 	  	  <div class="content-item">
+
+	  	 	  	<!-- start tab menu -->
+	  	 	  	  	  <div class="tabs">
+							    <div class="tab-item active">
+							      Thông Tin Chung
+							    </div>
+							    <div class="tab-item">
+							      Giới Thiệu
+							    </div>
+							    <div class="tab-item">
+							      Top Donate
+							    </div>
+							    <div class="tab-item">
+							      Đánh Giá
+							    </div>
+							    <div class="line"></div>
+							  </div>
+
+							  <!-- Tab content -->
+							  <div class="tab-content">
+							    <div class="tab-pane active">
+							      	<div class="active-all">
+							      		<div class="active-all-item">
+							      	  	<div class="paramater-item">
+							  	 	  	 	  <p>Người theo dõi</p>
+							  	 	  	 	  <p>320</p>
+							  	 	  	 </div>
+							  	 	  	 <div class="paramater-item">
+							  	 	  	 	  <p>Tỉ lệ hoàn thành</p>
+							  	 	  	 	  <div class="progress1">
+							  	 	  	 	  	<p id="progress"></p>
+							  	 	  	 	    <p>96%</p>
+							  	 	  	 	  </div>
+							  	 	  	 </div>
+							  	 	  	
+							      	  </div>
+							  	 	  <div class="active-all-item">
+							  	 	  	  <div class="paramater-item">
+							  	 	  	 	  <p>Giờ được thuê</p>
+							  	 	  	 	  <p>1862</p>
+							  	 	  	 </div>
+							  	 	  	 <div class="paramater-item">
+							  	 	  	 	  <p>Thiết bị</p>
+							  	 	  	 	  <p><i class="fa fa-camera" aria-hidden="true" style="padding-right: 13.33px;"></i><i class="fa fa-microphone" aria-hidden="true"></i></p>
+							  	 	  	 </div>
+							  	 	  </div>
+							      	</div>
+							      	  
+							  	 	  	 
+						  	 
+							    </div>
+							    <div class="tab-pane">
+				  	 	  	  	  	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+				  	 	  	  	  	 <p style="margin-top: 4px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+				  	 	  	  	  	 <div class="cont-item-img">
+				  	 	  	  	  	 	<div class="item-img">
+				  	 	  	  	  	 		<img src="images/chitiet/gioithieu1.png">
+				  	 	  	  	  	 	</div>
+				  	 	  	  	  	 	<div class="item-img">
+				  	 	  	  	  	 		<img src="images/chitiet/gioithieu2.png">
+				  	 	  	  	  	 	</div>
+				  	 	  	  	  	 	<div class="item-img">
+				  	 	  	  	  	 		<img src="images/chitiet/gioithieu3.png">
+				  	 	  	  	  	 	</div>
+				  	 	  	  	  	 	<div class="item-img">
+				  	 	  	  	  	 		<img src="images/chitiet/gioithieu4.png">
+				  	 	  	  	  	 	</div>
+				  	 	  	  	  	 	<div class="item-img">
+				  	 	  	  	  	 		<img src="images/chitiet/gioithieu5.png">
+				  	 	  	  	  	 	</div>
+				  	 	  	  	  	 	<div class="item-img">
+				  	 	  	  	  	 		<img src="images/chitiet/gioithieu6.png"><div class="plus">+4</div>
+				  	 	  	  	  	 	</div>
+				  	 	  	  	  	 	  
+				  	 	  	  	  	 	
+				  	 	  	  	  	 	
+				  	 	  	  	  	 </div>
+							    </div>
+							    <div class="tab-pane">
+							     
+				  	 	  	  	  	<div class="cont-form-donate">
+				  	 	  	  	  		 <div><img src="images/chitiet/donateimg.svg"></div>
+				  	 	  	  	  		 <div class="donate-item">
+				  	 	  	  	  		 	  
+				  	 	  	  	  		 	  <p>Linh Trần</p>
+				  	 	  	  	  		    <p><span>350,000</span> đ</p>
+				  	 	  	  	  		 </div>
+				  	 	  	  	  		 
+				  	 	  	  	  	</div>
+				  	 	  	  	  	<div class="cont-form-donate">
+				  	 	  	  	  		<div><img src="images/chitiet/donateimg.svg"></div>
+				  	 	  	  	  		 <div class="donate-item">
+				  	 	  	  	  		 	  <p>toan thien chan</p>
+				  	 	  	  	  		    <p><span>230,000</span> đ</p>
+				  	 	  	  	  		 </div>
+				  	 	  	  	  	</div>
+				  	 	  	  	  	<div class="cont-form-donate">
+				  	 	  	  	  		<div><img src="images/chitiet/donateimg.svg"></div>
+				  	 	  	  	  		 <div class="donate-item">
+				  	 	  	  	  		 	  <p>Duong le</p>
+				  	 	  	  	  		    <p><span>180,000</span> đ</p>
+				  	 	  	  	  		 </div>
+				  	 	  	  	  	</div>
+				  	 	  	  	  	<div class="cont-form-donate">
+				  	 	  	  	  		<div><img src="images/chitiet/donateimg.svg"></div>
+				  	 	  	  	  		 <div class="donate-item">
+				  	 	  	  	  		 	  <p>Huu long</p>
+				  	 	  	  	  		    <p><span>50,000</span> đ</p>
+				  	 	  	  	  		 </div>
+				  	 	  	  	  	</div>
+				  	 	  	  	  	<div class="cont-form-donate">
+				  	 	  	  	  		<div><img src="images/chitiet/donateimg.svg"></div>
+				  	 	  	  	  		 <div class="donate-item">
+				  	 	  	  	  		 	  <p>Thuy nguyen</p>
+				  	 	  	  	  		    <p><span>5,000</span> đ</p>
+				  	 	  	  	  		 </div>
+				  	 	  	  	  	</div>
+							    </div>
+							    <div class="tab-pane">
+							  	 	  	  	  	 <div class="cont-form-assess">
+							  	 	  	  	  	 	  <div class="assess-item1">
+							  	 	  	  	  	 	  	  <div><img src="images/chitiet/donateimg.svg"></div>
+							  	 	  	  	  		      <div class="assess-item-cont">
+									  	 	  	  	  		 	    <div class="assess-item-child">
+									  	 	  	  	  		 	    	  <p>linh trần</p>
+									  	 	  	  	  		 	    	  <p>19/03/2020 - 20.32</p>
+									  	 	  	  	  		 	    </div>
+									  	 	  	  	  		 	    <div class="assess-item-child">
+									  	 	  	  	  		 	    	 <p><img src="images/chitiet/rating1.svg"></p>
+									  	 	  	  	  		 	    	 <p>thuê 2h</p>
+									  	 	  	  	  		      </div>
+									  	 	  	  	  	 	  </div>
+							  	 	  	  	  	 	  </div>
+							  	 	  	  	  		 	<div class="assess-item2">
+							  	 	  	  	  		  	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+							  	 	  	  	  		  </div>
+							  	 	  	  	  		  
+							  	 	  	  	  	 </div>
+							  	 	  	  	  	 <div class="cont-form-assess">
+							  	 	  	  	  	 	 <div class="assess-item1">
+							  	 	  	  	  	 	  	  <div><img src="images/chitiet/donateimg.svg"></div>
+							  	 	  	  	  		      <div class="assess-item-cont">
+									  	 	  	  	  		 	    <div class="assess-item-child">
+									  	 	  	  	  		 	    	  <p>thiện nguyễn</p>
+									  	 	  	  	  		 	    	  <p>19/03/2020 - 20.32</p>
+									  	 	  	  	  		 	    </div>
+									  	 	  	  	  		 	    <div class="assess-item-child">
+									  	 	  	  	  		 	    	 <p><img src="images/chitiet/rating1.svg"></p>
+									  	 	  	  	  		 	    	 <p>thuê 2h</p>
+									  	 	  	  	  		      </div>
+									  	 	  	  	  	 	  </div>
+							  	 	  	  	  	 	  </div>
+							  	 	  	  	  		 	<div class="assess-item2">
+							  	 	  	  	  		  	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+							  	 	  	  	  		  </div>
+							  	 	  	  	  	 </div>
+							  	 	  	  	  	 <div class="cont-form-assess">
+							  	 	  	  	  	 	<div class="assess-item1">
+							  	 	  	  	  	 	  	  <div><img src="images/chitiet/donateimg.svg"></div>
+							  	 	  	  	  		      <div class="assess-item-cont">
+									  	 	  	  	  		 	    <div class="assess-item-child">
+									  	 	  	  	  		 	    	  <p>jimmy huỳnh</p>
+									  	 	  	  	  		 	    	  <p>19/03/2020 - 20.32</p>
+									  	 	  	  	  		 	    </div>
+									  	 	  	  	  		 	    <div class="assess-item-child">
+									  	 	  	  	  		 	    	 <p><img src="images/chitiet/rating1.svg"></p>
+									  	 	  	  	  		 	    	 <p>thuê 2h</p>
+									  	 	  	  	  		      </div>
+									  	 	  	  	  	 	  </div>
+							  	 	  	  	  	 	  </div>
+							  	 	  	  	  		 	<div class="assess-item2">
+							  	 	  	  	  		  	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+							  	 	  	  	  		  </div>
+							  	 	  	  	  	 </div>
+							  	 	  	  	  	 <div class="cont-form-assess">
+							  	 	  	  	  	 	<div class="assess-item1">
+							  	 	  	  	  	 	  	  <div><img src="images/chitiet/donateimg.svg"></div>
+							  	 	  	  	  		      <div class="assess-item-cont">
+								  	 	  	  	  		 	    <div class="assess-item-child">
+								  	 	  	  	  		 	    	  <p>trần phú</p>
+								  	 	  	  	  		 	    	  <p>19/03/2020 - 20.32</p>
+								  	 	  	  	  		 	    </div>
+								  	 	  	  	  		 	    <div class="assess-item-child">
+								  	 	  	  	  		 	    	 <p><img src="images/chitiet/rating1.svg"></p>
+								  	 	  	  	  		 	    	 <p>thuê 2h</p>
+								  	 	  	  	  		       </div>
+									  	 	  	  	  	 	</div>
+							  	 	  	  	  	 	  </div>
+							  	 	  	  	  		 	<div class="assess-item2">
+							  	 	  	  	  		  	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+							  	 	  	  	  		  </div>
+							  	 	  	  	  	 </div>
+							  	 	  	  	  	 <div class="cont-form-assess">
+							  	 	  	  	  	 	<div class="assess-item1">
+							  	 	  	  	  	 	  	  <div><img src="images/chitiet/donateimg.svg"></div>
+							  	 	  	  	  		      <div class="assess-item-cont">
+								  	 	  	  	  		 	    <div class="assess-item-child">
+								  	 	  	  	  		 	    	  <p>linh trần</p>
+								  	 	  	  	  		 	    	  <p>19/03/2020 - 20.32</p>
+								  	 	  	  	  		 	    </div>
+								  	 	  	  	  		 	    <div class="assess-item-child">
+								  	 	  	  	  		 	    	 <p><img src="images/chitiet/rating1.svg"></p>
+								  	 	  	  	  		 	    	 <p>thuê 2h</p>
+								  	 	  	  	  		        </div>
+									  	 	  	  	  	  </div>
+							  	 	  	  	  	 	  </div>
+							  	 	  	  	  		 	<div class="assess-item2">
+							  	 	  	  	  		  	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+							  	 	  	  	  		  </div>
+							  	 	  	  	  	 </div>
+							  	 	  	  	  	 <div class="cont-form-assess">
+							  	 	  	  	  	 	<div class="assess-item1">
+							  	 	  	  	  	 	  	  <div><img src="images/chitiet/donateimg.svg"></div>
+							  	 	  	  	  		      <div class="assess-item-cont">
+									  	 	  	  	  		 	    <div class="assess-item-child">
+									  	 	  	  	  		 	    	  <p>khánh duy</p>
+									  	 	  	  	  		 	    	  <p>19/03/2020 - 20.32</p>
+									  	 	  	  	  		 	    </div>
+									  	 	  	  	  		 	    <div class="assess-item-child">
+									  	 	  	  	  		 	    	 <p><img src="images/chitiet/rating1.svg"></p>
+									  	 	  	  	  		 	    	 <p>thuê 2h</p>
+									  	 	  	  	  		      </div>
+									  	 	  	  	  	 	  </div>
+							  	 	  	  	  	 	  </div>
+							  	 	  	  	  		 	<div class="assess-item2">
+							  	 	  	  	  		  	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+							  	 	  	  	  		  </div>
+							  	 	  	  	  	 </div>
+							  	 	  	  	  	 <div class="pagination">
+													  <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+													  <a href="#" class="active">1</a>
+													  <a href="#">2</a>
+													  <a href="#">...</a>
+													  <a href="#">8</a>
+													  <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+												</div>
+							  	 	  	  	  </div>
+							    </div>
+	   <!-- end tab menu -->
+				    </div>
+	  	 
+	  	 	  	  <div class="content-item">
+	  	 	  	  	  <div class="content-item-form">
+	  	 	  	  	  	 <h5>giới thiệu</h5>
+	  	 	  	  	  	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+	  	 	  	  	  	 <p style="margin-top: 4px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+	  	 	  	  	  	 <div class="cont-item-img">
+	  	 	  	  	  	 	    <div class="item-img">
+		  	 	  	  	  	 		<img src="images/chitiet/gioithieu1.png">
+		  	 	  	  	  	 	</div>
+		  	 	  	  	  	 	<div class="item-img">
+		  	 	  	  	  	 		<img src="images/chitiet/gioithieu2.png">
+		  	 	  	  	  	 	</div>
+		  	 	  	  	  	 	<div class="item-img">
+		  	 	  	  	  	 		<img src="images/chitiet/gioithieu3.png">
+		  	 	  	  	  	 	</div>
+		  	 	  	  	  	 	<div class="item-img">
+		  	 	  	  	  	 		<img src="images/chitiet/gioithieu4.png">
+		  	 	  	  	  	 	</div>
+		  	 	  	  	  	 	<div class="item-img">
+		  	 	  	  	  	 		<img src="images/chitiet/gioithieu5.png">
+		  	 	  	  	  	 	</div>
+		  	 	  	  	  	 	<div class="item-img">
+		  	 	  	  	  	 		<img src="images/chitiet/gioithieu6.png"><div class="plus">+4</div>
+				  	 	  	  	</div>
+	  	 	  	  	  	 	   
+	  	 	  	  	  	 </div>
+	  	 	  	  	  </div>
+	  	 	  	  	  <div class="content-item-form">
+	  	 	  	  	  	<h5>top donate</h5>
+	  	 	  	  	  	<div class="cont-form-donate">
+	  	 	  	  	  		 <div><img src="images/chitiet/donateimg.svg"></div>
+	  	 	  	  	  		 <div class="donate-item">
+	  	 	  	  	  		 	  
+	  	 	  	  	  		 	  <p>Linh Trần</p>
+	  	 	  	  	  		    <p><span>350,000</span> đ</p>
+	  	 	  	  	  		 </div>
+	  	 	  	  	  		 
+	  	 	  	  	  	</div>
+	  	 	  	  	  	<div class="cont-form-donate">
+	  	 	  	  	  		<div><img src="images/chitiet/donateimg.svg"></div>
+	  	 	  	  	  		 <div class="donate-item">
+	  	 	  	  	  		 	  <p>toan thien chan</p>
+	  	 	  	  	  		    <p><span>230,000</span> đ</p>
+	  	 	  	  	  		 </div>
+	  	 	  	  	  	</div>
+	  	 	  	  	  	<div class="cont-form-donate">
+	  	 	  	  	  		<div><img src="images/chitiet/donateimg.svg"></div>
+	  	 	  	  	  		 <div class="donate-item">
+	  	 	  	  	  		 	  <p>Duong le</p>
+	  	 	  	  	  		    <p><span>180,000</span> đ</p>
+	  	 	  	  	  		 </div>
+	  	 	  	  	  	</div>
+	  	 	  	  	  	<div class="cont-form-donate">
+	  	 	  	  	  		<div><img src="images/chitiet/donateimg.svg"></div>
+	  	 	  	  	  		 <div class="donate-item">
+	  	 	  	  	  		 	  <p>Huu long</p>
+	  	 	  	  	  		    <p><span>50,000</span> đ</p>
+	  	 	  	  	  		 </div>
+	  	 	  	  	  	</div>
+	  	 	  	  	  	<div class="cont-form-donate">
+	  	 	  	  	  		<div><img src="images/chitiet/donateimg.svg"></div>
+	  	 	  	  	  		 <div class="donate-item">
+	  	 	  	  	  		 	  <p>Thuy nguyen</p>
+	  	 	  	  	  		    <p><span>5,000</span> đ</p>
+	  	 	  	  	  		 </div>
+	  	 	  	  	  	</div>
+	  	 	  	  	  </div>
+	  	 	  	  	  <div class="content-item-form">
+	  	 	  	  	  	 <h5>đánh giá</h5>
+	  	 	  	  	  	 <div class="cont-form-assess">
+	  	 	  	  	  	 	  <div class="assess-item1">
+	  	 	  	  	  	 	  	  <div><img src="images/chitiet/donateimg.svg"></div>
+	  	 	  	  	  		      <div class="assess-item-cont">
+			  	 	  	  	  		 	    <div class="assess-item-child">
+			  	 	  	  	  		 	    	  <p>linh trần</p>
+			  	 	  	  	  		 	    	  <p>19/03/2020 - 20.32</p>
+			  	 	  	  	  		 	    </div>
+			  	 	  	  	  		 	    <div class="assess-item-child">
+			  	 	  	  	  		 	    	 <p><img src="images/chitiet/rating1.svg"></p>
+			  	 	  	  	  		 	    	 <p>thuê 2h</p>
+			  	 	  	  	  		      </div>
+			  	 	  	  	  	 	  </div>
+	  	 	  	  	  	 	  </div>
+	  	 	  	  	  		 	<div class="assess-item2">
+	  	 	  	  	  		  	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+	  	 	  	  	  		  </div>
+	  	 	  	  	  		  
+	  	 	  	  	  	 </div>
+	  	 	  	  	  	 <div class="cont-form-assess">
+	  	 	  	  	  	 	 <div class="assess-item1">
+	  	 	  	  	  	 	  	  <div><img src="images/chitiet/donateimg.svg"></div>
+	  	 	  	  	  		      <div class="assess-item-cont">
+			  	 	  	  	  		 	    <div class="assess-item-child">
+			  	 	  	  	  		 	    	  <p>thiện nguyễn</p>
+			  	 	  	  	  		 	    	  <p>19/03/2020 - 20.32</p>
+			  	 	  	  	  		 	    </div>
+			  	 	  	  	  		 	    <div class="assess-item-child">
+			  	 	  	  	  		 	    	 <p><img src="images/chitiet/rating1.svg"></p>
+			  	 	  	  	  		 	    	 <p>thuê 2h</p>
+			  	 	  	  	  		      </div>
+			  	 	  	  	  	 	  </div>
+	  	 	  	  	  	 	  </div>
+	  	 	  	  	  		 	<div class="assess-item2">
+	  	 	  	  	  		  	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+	  	 	  	  	  		  </div>
+	  	 	  	  	  	 </div>
+	  	 	  	  	  	 <div class="cont-form-assess">
+	  	 	  	  	  	 	<div class="assess-item1">
+	  	 	  	  	  	 	  	  <div><img src="images/chitiet/donateimg.svg"></div>
+	  	 	  	  	  		      <div class="assess-item-cont">
+			  	 	  	  	  		 	    <div class="assess-item-child">
+			  	 	  	  	  		 	    	  <p>jimmy huỳnh</p>
+			  	 	  	  	  		 	    	  <p>19/03/2020 - 20.32</p>
+			  	 	  	  	  		 	    </div>
+			  	 	  	  	  		 	    <div class="assess-item-child">
+			  	 	  	  	  		 	    	 <p><img src="images/chitiet/rating1.svg"></p>
+			  	 	  	  	  		 	    	 <p>thuê 2h</p>
+			  	 	  	  	  		      </div>
+			  	 	  	  	  	 	  </div>
+	  	 	  	  	  	 	  </div>
+	  	 	  	  	  		 	<div class="assess-item2">
+	  	 	  	  	  		  	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+	  	 	  	  	  		  </div>
+	  	 	  	  	  	 </div>
+	  	 	  	  	  	 <div class="cont-form-assess">
+	  	 	  	  	  	 	<div class="assess-item1">
+	  	 	  	  	  	 	  	  <div><img src="images/chitiet/donateimg.svg"></div>
+	  	 	  	  	  		      <div class="assess-item-cont">
+		  	 	  	  	  		 	    <div class="assess-item-child">
+		  	 	  	  	  		 	    	  <p>trần phú</p>
+		  	 	  	  	  		 	    	  <p>19/03/2020 - 20.32</p>
+		  	 	  	  	  		 	    </div>
+		  	 	  	  	  		 	    <div class="assess-item-child">
+		  	 	  	  	  		 	    	 <p><img src="images/chitiet/rating1.svg"></p>
+		  	 	  	  	  		 	    	 <p>thuê 2h</p>
+		  	 	  	  	  		       </div>
+			  	 	  	  	  	 	</div>
+	  	 	  	  	  	 	  </div>
+	  	 	  	  	  		 	<div class="assess-item2">
+	  	 	  	  	  		  	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+	  	 	  	  	  		  </div>
+	  	 	  	  	  	 </div>
+	  	 	  	  	  	 <div class="cont-form-assess">
+	  	 	  	  	  	 	<div class="assess-item1">
+	  	 	  	  	  	 	  	  <div><img src="images/chitiet/donateimg.svg"></div>
+	  	 	  	  	  		      <div class="assess-item-cont">
+		  	 	  	  	  		 	    <div class="assess-item-child">
+		  	 	  	  	  		 	    	  <p>linh trần</p>
+		  	 	  	  	  		 	    	  <p>19/03/2020 - 20.32</p>
+		  	 	  	  	  		 	    </div>
+		  	 	  	  	  		 	    <div class="assess-item-child">
+		  	 	  	  	  		 	    	 <p><img src="images/chitiet/rating1.svg"></p>
+		  	 	  	  	  		 	    	 <p>thuê 2h</p>
+		  	 	  	  	  		        </div>
+			  	 	  	  	  	  </div>
+	  	 	  	  	  	 	  </div>
+	  	 	  	  	  		 	<div class="assess-item2">
+	  	 	  	  	  		  	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+	  	 	  	  	  		  </div>
+	  	 	  	  	  	 </div>
+	  	 	  	  	  	 <div class="cont-form-assess">
+	  	 	  	  	  	 	<div class="assess-item1">
+	  	 	  	  	  	 	  	  <div><img src="images/chitiet/donateimg.svg"></div>
+	  	 	  	  	  		      <div class="assess-item-cont">
+			  	 	  	  	  		 	    <div class="assess-item-child">
+			  	 	  	  	  		 	    	  <p>khánh duy</p>
+			  	 	  	  	  		 	    	  <p>19/03/2020 - 20.32</p>
+			  	 	  	  	  		 	    </div>
+			  	 	  	  	  		 	    <div class="assess-item-child">
+			  	 	  	  	  		 	    	 <p><img src="images/chitiet/rating1.svg"></p>
+			  	 	  	  	  		 	    	 <p>thuê 2h</p>
+			  	 	  	  	  		      </div>
+			  	 	  	  	  	 	  </div>
+	  	 	  	  	  	 	  </div>
+	  	 	  	  	  		 	<div class="assess-item2">
+	  	 	  	  	  		  	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+	  	 	  	  	  		  </div>
+	  	 	  	  	  	 </div>
+	  	 	  	  	  	 <div class="pagination">
+							  <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+							  <a href="#" class="active">1</a>
+							  <a href="#">2</a>
+							  <a href="#">...</a>
+							  <a href="#">8</a>
+							  <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+						</div>
+	  	 	  	  	  </div>
+	  	 	  	  </div>
+
+
+	  	 	  	  <div class="content-item">
+
+	  	 	  	  	  <div class="content-item-show">
+	  	 	  	  	  	 <form action="" method="post">
+							  <img src="images/chitiet/face1.svg">
+						    <input type="text" name="contact" placeholder="Viết bình luận">
+						</form>
+	  	 	  	  	  </div>
+
+	  	 	  	  	  <div class="content-item-show">
+	  	 	  	  	  	    <div class="form-firth">
+								<div class="form-item1">
+									<img src="images/user/face.png">
+								</div>
+								<div class="form-item1">
+									<p >Nguyễn Đình Trần Thiện</p>
+									<p>19/01/2021 - 20:32</p>
+								</div>
+							</div>
+							<div class="form-label">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+							</div>
+							<div class="form-main">
+								<img src="images/chitiet/main.png" style="max-width:100%;">
+							</div>
+							<div class="form-like">
+								<img src="images/user/heart.png">
+								<p><span>15</span>  người thích bài viết này</p>
+							</div>
+							<div class="form-contact">
+								<form action="" method="post">
+									<img src="images/user/face.png">
+								    <input type="text" name="contact" placeholder="Viết bình luận">
+								</form>
+							</div>
+	  	 	  	  	  </div>
+
+	  	 	  	  	  <div class="content-item-show">
+	  	 	  	  	  	    <div class="form-firth">
+								<div class="form-item1">
+									<img src="images/user/face.png">
+								</div>
+								<div class="form-item1">
+									<p >Nguyễn Đình Trần Thiện</p>
+									<p>19/01/2021 - 20:32</p>
+								</div>
+							</div>
+							<div class="form-label">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+							</div>
+							<div class="form-main">
+							    <div class="form-main-img">
+							    	<img src="images/chitiet/main1.png">
+							    </div>
+							    <div class="form-main-img">
+							    	<img src="images/chitiet/main2.png">
+							    </div>
+							    <div class="form-main-img">
+							    	<img src="images/chitiet/main3.png">
+							    </div>
+							    <div class="form-main-img">
+							    	<img src="images/chitiet/main4.png">
+							    </div>
+							    <div class="form-main-img">
+							    	<img src="images/chitiet/main5.png">
+							    </div>
+								
+								
+								
+								
+								
+							</div>
+							<div class="form-like">
+								<img src="images/user/heart.png">
+								<p><span>15</span>  người thích bài viết này</p>
+							</div>
+							<div class="form-contact">
+								<form action="" method="post">
+									<img src="images/user/face.png">
+								    <input type="text" name="contact" placeholder="Viết bình luận">
+								</form>
+							</div>
+	  	 	  	  	  </div>
+
+	  	 	  	  	  <div class="content-item-show">
+	  	 	  	  	  	    <div class="form-firth">
+								<div class="form-item1">
+									<img src="images/user/face.png">
+								</div>
+								<div class="form-item1">
+									<p >Nguyễn Đình Trần Thiện</p>
+									<p>19/01/2021 - 20:32</p>
+								</div>
+							</div>
+							<div class="form-label">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+							</div>
+							<div class="form-main">
+								<img src="images/chitiet/main7.svg" style="max-width: 100%;">
+							</div>
+							<div class="form-like">
+								<img src="images/user/heart.png">
+								<p><span>15</span>  người thích bài viết này</p>
+							</div>
+							<div class="form-contact">
+								<form action="" method="post">
+									<img src="images/user/face.png">
+								    <input type="text" name="contact" placeholder="Viết bình luận">
+								</form>
+							</div>
+	  	 	  	  	  </div>
+	  	 	  	  </div>
+	  	 	  </div>
+	  	 </div>
+  	</div>
+  </div>
+
+  <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript">
+	  const $ = document.querySelector.bind(document);
+	  const $$ = document.querySelectorAll.bind(document);
+
+	 const tabs = $$(".tab-item");
+	 const panes = $$(".tab-pane");
+
+	  const tabActive = $(".tab-item.active");
+	  const line = $(".tabs .line");
+
+	 line.style.left = tabActive.offsetLeft + "px";
+	 line.style.width = tabActive.offsetWidth + "px";
+
+	 tabs.forEach((tab, index) => {
+	  const pane = panes[index];
+
+	  tab.onclick = function () {
+	    $(".tab-item.active").classList.remove("active");
+	    $(".tab-pane.active").classList.remove("active");
+
+	    line.style.left = this.offsetLeft + "px";
+	    line.style.width = this.offsetWidth + "px";
+
+	    this.classList.add("active");
+	    pane.classList.add("active");
+	  };
+	});
+
+</script> -->
+
+<script>
+
+
+      $(document).ready(function(){
+
+        $(".nav-toggle").click(function(){
+           $(".nav-content").toggleClass("nav-active");
+           $(".nav-toggle").toggleClass("toggle");
+           $(".flex-header").toggleClass("toggle");
+
+        });
+
+      });
+
+
+     
+</script>
+</body>
+
+
+</html>

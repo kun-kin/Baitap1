@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lịch sử giao dịch</title>
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/menu-responsive.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/header.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/lichsu.css">
+	<script src="lib/js/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div class="header">
+       <div class="header-top"></div>
+       <div class="flex-header">
+           <div class="header-logo">
+               <img src="images/user/logo.png" class="logo">
+               <img src="images/user/logo1.png" class="logo1">
+           </div>
+           <div class="header-list">
+               <ul class="list">
+                   <li><a href="user.html">Trang chủ</a></li>
+                   <li><a href="chitiet.html">Thuê người chơi</a></li>
+                   <li><a href="thue.html">Đang theo dõi</a></li>
+                   
+               </ul>
+           </div>
+           <div class="header-icons">
+               <div class="btn-icons">
+                   <a href=""><img src="images/user/search.png"></a>
+                   <a href=""><img src="images/user/messages.png"></a>
+                   <a href=""><img src="images/user/bell.png"></a>
+               </div>
+               <div class="btn-icons1">
+                   <a href=""><img src="images/chitiet/btn.svg"></a>
+                   <a href=""><img src="images/chitiet/btn1.svg"></a>
+                   <a href=""><img src="images/chitiet/btn2.svg"></a>
+               </div>
+               <div class="profile">
+                    <div class="dropdown">
+                      <button class="dropbtn">
+                          <img src="images/user/profile.png">
+                          <div class="dropbtn-profile">
+                              <p>HoangNguyen</p>
+                              <p><span>15,000</span> đ</p>
+                          </div>
+                      </button>
+                      <div class="dropdown-content">
+                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Nạp tiền</a>
+                            <a href="#">Rút tiền</a>
+                            <a href="lichsu.html">Lịch sử giao dịch</a>
+                            <a href="profile.html">Cài đặt tài khoản</a>
+                            <a href="#">Đăng xuất</a>
+                      </div>
+                    </div>
+               </div>
+            
+           </div>
+           <span class="nav-toggle">
+               <span></span>
+           </span>
+           
+       </div>   
+    </div>
+	<!-- end header -->
+	<div class="nav-content">
+		<div class="nav-content-top">
+		<div class="nav-content-profile">
+			<div> <img src="images/user/profile.png"></div>
+            <div class="dropbtn-profile">
+              <p>HoangNguyen</p>
+              <p><span>15,000</span> đ</p>
+            </div>
+		</div>
+		<div class="nav-content-list">
+			<ul>
+                <li><a href="user.html">Trang chủ</a></li>
+                <li><a href="chitiet.html">Thuê người chơi</a></li>
+                <li><a href="thue.html">Đang theo dõi</a></li>
+            </ul>
+		</div>
+		</div>
+		<div class="text-center">
+			<button class="btn-logout">Đăng xuất</button>
+		</div> 
+    </div>
+    <!-- Modal -->
+<div class="modal fade admid" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">nạp tiền vào 5me.onl</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+              <img src="images/chitiet/close.svg">
+          </span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien1.png"></div>
+              <div class="modal-admid-item">
+                  <p>Chuyển khoản qua ngân hàng</p>
+                  <p>Miễn phí. Hỗ trợ 8:30 - 22:00 hàng ngày (trừ chủ nhật và các ngày lễ)</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien2.png"></div>
+              <div class="modal-admid-item">
+                  <p>Nạp tiền bằng thẻ cào Player Code</p>
+                  <p>Player code</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien3.png"></div>
+              <div class="modal-admid-item">
+                  <p>Nạp tiền bằng thẻ cào điện thoại</p>
+                  <p>Mobile card</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien4.png"></div>
+              <div class="modal-admid-item">
+                  <p>Thanh toán trực tiếp qua Internet Banking</p>
+                  <p>Phí 1.760đ + 3% giá trị nạp</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien5.png"></div>
+              <div class="modal-admid-item">
+                  <p>Thanh toán trực tiếp qua Visa / Master Card</p>
+                  <p>Phí 5.000đ + 7% giá trị nạp</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien6.png"></div>
+              <div class="modal-admid-item">
+                  <p>Thanh toán trực tiếp qua QR code</p>
+                  <p>Phí 3% giá trị nạp</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien7.png"></div>
+              <div class="modal-admid-item">
+                  <p>Thanh toán qua Paypal</p>
+                  <p>Phí tùy vào đại lý</p>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- sdsddddđ -->
+ <div class="main">
+ 	<div class="main-container">
+ 		<h5 class="title">lịch sử giao dịch</h5>
+ 		<div class="main-search">
+ 			<form>
+        <div class="form-input">
+            <input type="text" name="search" placeholder="Từ khóa tìm kiếm" class="search">
+        </div>
+	 			<div class="form-select">
+            <select name="loaigiaodich" class="select-search">
+              <option value="0">Loại giao dịch</option>
+              <option value="nạp tiền">Nạp tiền</option>
+              <option value="donate">Donate</option>
+            </select>
+            <button name="button" class="btnsearch">
+              <img src="images/search.svg">
+            </button>
+        </div>
+	 			
+ 			</form>
+ 		</div>
+ 		<div class="main-content">
+      <div class="div-table">
+ 			<table class="table-cont">
+        <thead>
+           <tr class="table-title">
+            <th>ngày/giờ</th>
+            <th>loại giao dịch</th>
+            <th>số dư trước giao dịch</th>
+            <th>số tiền giao dịch</th>
+            <th>số dư sau giao dịch</th>
+            <th>lời nhắn</th>
+          </tr>
+        </thead>
+ 				<tbody>
+          <tr class="table-main">
+            <td>05/12/2020 - 08:40</td>
+            <td class="exe">
+               <p>Nạp tiền</p>
+               <p class="exe2"><img src="https://th.bing.com/th/id/OIP.fXGKwYwCabHTwKyDio0TPgHaLH?pid=ImgDet&rs=1"> lê hoàng</p>
+            </td>
+            <td>160,000</td>
+            <td>120,000</td>
+            <td>120,000</td>
+            <td>
+              <div class="table-mess">Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</div>
+              <a href="javascript:;"><img src="images/vector.svg" class="table-down"></a>
+            </td>
+          </tr>
+          <tr class="table-main">
+            <td>05/12/2020 - 08:40</td>
+            <td class="exe">
+               <p>Donate</p>
+               <p class="exe2"><img src="https://th.bing.com/th/id/OIP.fXGKwYwCabHTwKyDio0TPgHaLH?pid=ImgDet&rs=1"> lê hoàng</p>
+            </td>
+            <td>160,000</td>
+            <td>120,000</td>
+            <td>120,000</td>
+            <td>
+              <div class="table-mess">Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</div>
+              <a href="javascript:;"><img src="images/vector.svg" class="table-down"></a>
+            </td>
+          </tr>
+          <tr class="table-main">
+            <td>05/12/2020 - 08:40</td>
+            <td class="exe">
+               <p>Nạp tiền</p>
+               <p class="exe2"><img src="https://th.bing.com/th/id/OIP.fXGKwYwCabHTwKyDio0TPgHaLH?pid=ImgDet&rs=1"> lê hoàng</p>
+            </td>
+            <td>160,000</td>
+            <td>120,000</td>
+            <td>120,000</td>
+            <td>
+              <div class="table-mess">Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</div>
+              <a href="javascript:;"><img src="images/vector.svg" class="table-down"></a>
+            </td>
+          </tr>
+          <tr class="table-main">
+            <td>05/12/2020 - 08:40</td>
+            <td class="exe">
+               <p>Nạp tiền</p>
+               <p class="exe2"><img src="https://th.bing.com/th/id/OIP.fXGKwYwCabHTwKyDio0TPgHaLH?pid=ImgDet&rs=1"> lê hoàng</p>
+            </td>
+            <td>160,000</td>
+            <td>120,000</td>
+            <td>120,000</td>
+            <td>
+              <div class="table-mess">Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</div>
+              <a href="javascript:;"><img src="images/vector.svg" class="table-down"></a>
+            </td>
+          </tr>
+          <tr class="table-main">
+            <td>05/12/2020 - 08:40</td>
+            <td class="exe">
+               <p>Nạp tiền</p>
+               <p class="exe2"><img src="https://th.bing.com/th/id/OIP.fXGKwYwCabHTwKyDio0TPgHaLH?pid=ImgDet&rs=1"> lê hoàng</p>
+            </td>
+            <td>160,000</td>
+            <td>120,000</td>
+            <td>120,000</td>
+            <td>
+              <div class="table-mess">Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</div>
+              <a href="javascript:;"><img src="images/vector.svg" class="table-down"></a>
+            </td>
+          </tr>
+          <tr class="table-main">
+            <td>05/12/2020 - 08:40</td>
+            <td class="exe">
+               <p>Nạp tiền</p>
+               <p class="exe2"><img src="https://th.bing.com/th/id/OIP.fXGKwYwCabHTwKyDio0TPgHaLH?pid=ImgDet&rs=1"> lê hoàng</p>
+            </td>
+            <td>160,000</td>
+            <td>120,000</td>
+            <td>120,000</td>
+            <td>
+              <div class="table-mess">Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</div>
+              <a href="javascript:;"><img src="images/vector.svg" class="table-down"></a>
+            </td>
+          </tr>
+          <tr class="table-main">
+            <td>05/12/2020 - 08:40</td>
+            <td class="exe">
+               <p>Nạp tiền</p>
+               <p class="exe2"><img src="https://th.bing.com/th/id/OIP.fXGKwYwCabHTwKyDio0TPgHaLH?pid=ImgDet&rs=1"> lê hoàng</p>
+            </td>
+            <td>160,000</td>
+            <td>120,000</td>
+            <td>120,000</td>
+            <td>
+              <div class="table-mess">Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</div>
+              <a href="javascript:;"><img src="images/vector.svg" class="table-down"></a>
+            </td>
+          </tr>
+          <tr class="table-main">
+            <td>05/12/2020 - 08:40</td>
+            <td class="exe">
+               <p>Nạp tiền</p>
+               <p class="exe2"><img src="https://th.bing.com/th/id/OIP.fXGKwYwCabHTwKyDio0TPgHaLH?pid=ImgDet&rs=1"> lê hoàng</p>
+            </td>
+            <td>160,000</td>
+            <td>120,000</td>
+            <td>120,000</td>
+            <td>
+              <div class="table-mess">Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</div>
+              <a href="javascript:;"><img src="images/vector.svg" class="table-down"></a>
+            </td>
+          </tr>
+          <tr class="table-main">
+            <td>05/12/2020 - 08:40</td>
+            <td class="exe">
+               <p>Nạp tiền</p>
+               <p class="exe2"><img src="https://th.bing.com/th/id/OIP.fXGKwYwCabHTwKyDio0TPgHaLH?pid=ImgDet&rs=1"> lê hoàng</p>
+            </td>
+            <td>160,000</td>
+            <td>120,000</td>
+            <td>120,000</td>
+            <td>
+              <div class="table-mess">Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</div>
+              <a href="javascript:;"><img src="images/vector.svg" class="table-down"></a>
+            </td>
+          </tr>
+          <tr class="table-main">
+            <td>05/12/2020 - 08:40</td>
+            <td class="exe">
+               <p>Nạp tiền</p>
+               <p class="exe2"><img src="https://th.bing.com/th/id/OIP.fXGKwYwCabHTwKyDio0TPgHaLH?pid=ImgDet&rs=1"> lê hoàng</p>
+            </td>
+            <td>160,000</td>
+            <td>120,000</td>
+            <td>120,000</td>
+            <td>
+              <div class="table-mess">Lorem ipsum dolor sit amet, consadq lorem ipsum dolor sit amet</div>
+              <a href="javascript:;"><img src="images/vector.svg" class="table-down"></a>
+            </td>
+          </tr>
+          
+        </tbody>
+				
+       
+ 			</table></div>
+ 			<div class="table-footer">
+          <div class="table-footer-cont"><span>12</span>/40 người chơi</div>
+          <div class="table-footer-cont">
+             <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#"><</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">8</a></li>
+                  <li class="page-item"><a class="page-link" href="#">></a></li>
+                </ul>
+              </nav>
+          </div>   
+      </div>
+ 		</div>
+ 	</div>
+ </div>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+      $('.table-main').click(function(){
+        $(".table-down",this).toggleClass("up");
+        $(".table-mess",this).toggleClass("messup");
+        $(".exe2",this).toggleClass("exe2up");
+      });
+
+
+    });
+</script>
+</body>
+</html>

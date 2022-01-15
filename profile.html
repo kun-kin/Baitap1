@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profile</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/menu-responsive.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/header.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/profile.css">
+	<script src="lib/js/jquery-3.6.0.js"></script>
+		<!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" /> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"> -->
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+	
+</head>
+<body>
+   <div class="header">
+       <div class="header-top"></div>
+       <div class="flex-header">
+           <div class="header-logo">
+               <img src="images/user/logo.png" class="logo">
+               <img src="images/user/logo1.png" class="logo1">
+           </div>
+           <div class="header-list">
+               <ul class="list">
+                   <li><a href="user.html">Trang chủ</a></li>
+                   <li><a href="chitiet.html">Thuê người chơi</a></li>
+                   <li><a href="thue.html">Đang theo dõi</a></li>
+                   
+               </ul>
+           </div>
+           <div class="header-icons">
+               <div class="btn-icons">
+                   <a href=""><img src="images/user/search.png"></a>
+                   <a href=""><img src="images/user/messages.png"></a>
+                   <a href=""><img src="images/user/bell.png"></a>
+               </div>
+               <div class="btn-icons1">
+                   <a href=""><img src="images/chitiet/btn.svg"></a>
+                   <a href=""><img src="images/chitiet/btn1.svg"></a>
+                   <a href=""><img src="images/chitiet/btn2.svg"></a>
+               </div>
+               <div class="profile">
+                    <div class="dropdown">
+                      <button class="dropbtn">
+                          <img src="images/user/profile.png">
+                          <div class="dropbtn-profile">
+                              <p>HoangNguyen</p>
+                              <p><span>15,000</span> đ</p>
+                          </div>
+                      </button>
+                      <div class="dropdown-content">
+                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Nạp tiền</a>
+                            <a href="#">Rút tiền</a>
+                            <a href="lichsu.html">Lịch sử giao dịch</a>
+                            <a href="profile.html">Cài đặt tài khoản</a>
+                            <a href="#">Đăng xuất</a>
+                      </div>
+                    </div>
+               </div>
+            
+           </div>
+           <span class="nav-toggle">
+               <span></span>
+           </span>
+           
+       </div>   
+    </div>
+	<!-- end header -->
+	<div class="nav-content">
+		<div class="nav-content-top">
+		<div class="nav-content-profile">
+			<div> <img src="images/user/profile.png"></div>
+            <div class="dropbtn-profile">
+              <p>HoangNguyen</p>
+              <p><span>15,000</span> đ</p>
+            </div>
+		</div>
+		<div class="nav-content-list">
+			<ul>
+                <li><a href="user.html">Trang chủ</a></li>
+                <li><a href="chitiet.html">Thuê người chơi</a></li>
+                <li><a href="thue.html">Đang theo dõi</a></li>
+            </ul>
+		</div>
+	    </div>
+		<div class="text-center">
+			<button class="btn-logout">Đăng xuất</button>
+		</div> 
+    </div>
+    <!-- container -->
+
+    <!-- Modal -->
+<div class="modal fade admid" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">nạp tiền vào 5me.onl</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+              <img src="images/chitiet/close.svg">
+          </span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien1.png"></div>
+              <div class="modal-admid-item">
+                  <p>Chuyển khoản qua ngân hàng</p>
+                  <p>Miễn phí. Hỗ trợ 8:30 - 22:00 hàng ngày (trừ chủ nhật và các ngày lễ)</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien2.png"></div>
+              <div class="modal-admid-item">
+                  <p>Nạp tiền bằng thẻ cào Player Code</p>
+                  <p>Player code</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien3.png"></div>
+              <div class="modal-admid-item">
+                  <p>Nạp tiền bằng thẻ cào điện thoại</p>
+                  <p>Mobile card</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien4.png"></div>
+              <div class="modal-admid-item">
+                  <p>Thanh toán trực tiếp qua Internet Banking</p>
+                  <p>Phí 1.760đ + 3% giá trị nạp</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien5.png"></div>
+              <div class="modal-admid-item">
+                  <p>Thanh toán trực tiếp qua Visa / Master Card</p>
+                  <p>Phí 5.000đ + 7% giá trị nạp</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien6.png"></div>
+              <div class="modal-admid-item">
+                  <p>Thanh toán trực tiếp qua QR code</p>
+                  <p>Phí 3% giá trị nạp</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien7.png"></div>
+              <div class="modal-admid-item">
+                  <p>Thanh toán qua Paypal</p>
+                  <p>Phí tùy vào đại lý</p>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- sdsddddđ -->
+    <div class="container-main">
+    	<div class="main">
+    		<div class="maintop">
+                <div class="main-profile">
+                <div class="main-profile-img profile-img">
+                    <img src="https://hinhgaixinh.com/wp-content/uploads/2021/03/20210314-hot-girl-toc-dai-2-scaled.jpg">
+                    <div class="change-imgprofile">
+                        <a href="#"><img src="images/profile-camera.svg"></a>
+                    </div>
+                </div>      
+                <div class="main-profile-item">
+                    <p class="profile-item1-name">trần thị thùy linh</p>
+                    <div class="profile-item1">
+                        <p><img src="images/mainking.png"> Thành viên vàng</p>
+                        <p><img src="images/maindolar.png"><span>15,000</span> đ</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="main-form">
+                <form>
+                    <div class="form-top">
+                        <div class="form-top-item">
+                            <div class="form-top-item1">
+                                <div class="form-top-item1-1">
+                                    <p>tổng tiền đã nạp</p>
+                                    <p><span>7,000,000</span> đ</p>
+                                </div>
+                                
+                            </div>
+                            <div class="form-top-item1">
+                                <div class="form-top-item1-1">
+                                    <p>tiền đã donate</p>
+                                    <p><span>550,000</span> đ</p>
+                                </div>
+                                <div class="form-top-item1-1">
+                                    <p>số giờ đã thuê</p>
+                                    <p><span>120</span> giờ</p>
+                                </div>
+                                
+                            </div>
+                           <!--  <div class="form-top-item1">
+                                
+                            </div> -->
+                        </div>
+                        <div class="form-top-item">
+                            <div class="form-top-item2">
+                                <div class="form-top-item21 profile-name">
+                                    <label>Họ & Tên</label>
+                                    <input type="text" name="profile-name" value="nguyễn đình trần thiện">
+                                </div>
+                                <div class="form-top-item21 profile-nickname">
+                                    <label>Biệt Danh</label>
+                                    <input type="text" name="profile-nickname" value="thiện kaity">
+                                </div>
+                            </div>
+                            <div class="form-top-item2">
+                                <div class="form-top-item21 profile-birth">
+                                    <label>Ngày sinh</label>
+                                    <input type="text" name="profile-birth" value="24/03/2021">
+                                </div>
+                                <div class="form-top-item21 profile-gender">
+                                    <label>Giới tính</label>
+                                    <div class="gender-radio">
+                                        <input type="radio" name="gioi_tinh" id="male">
+                                        <label for="male">Nam</label>
+                                        <input type="radio" name="gioi_tinh" id="female" checked="checked">
+                                        <label for="female">Nữ</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="form-top-item">
+                            <div class="form-top-item3">
+                                <label>quốc gia</label>
+                                <select name="nation" id="nation">
+                                    <option value="">-chọn quốc gia-</option>
+                                    <option value="vietnam">Việt Nam</option>
+                                </select>
+                            </div>
+                            <div class="form-top-item3">
+                                <label>thành phố</label>
+                                <select name="city" id="city">
+                                    <option value="">-chọn thành phố-</option>
+                                    <option>Hồ Chí Minh</option>
+                                </select>
+                            </div>
+                            <div class="form-top-item3">
+                                <label>ngôn ngũ</label>
+                                <select name="language" id="language">
+                                    <option value="">-chọn ngôn ngữ-</option>
+                                    <option value="vietnam">
+                                        <p>Tiếng việt</p>
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-top-item">
+                            <div class="form-top-item4-label">
+                                <p>Mật khẩu</p>
+                                <i class="fa fa-circle" aria-hidden="true" style="color: rgba(101, 1, 7, 0.2);padding: 0 12px;font-size: 6px;"></i>
+                                <div class="active-passbtn">
+                                    <a href="#" class="change-password change-password1">Đổi mật khẩu</a>
+                                    <a href="#" class="change-password change-password2">
+                                        Hủy bỏ
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="form-top-item4-form">
+                                <div class="form-top-item4">
+                                    <label>mật khẩu cũ</label>
+                                    <div class="box-password">
+                                        <input type="password" name="password">
+                                        <img src="images/eye.svg" id="togglePassword">
+                                    </div>
+                                </div>
+                                <div class="form-top-item4">
+                                    <label>mật khẩu mới</label>
+                                    <div class="box-password">
+                                        <input type="password" name="newpassword">
+                                        <img src="images/eye.svg" id="togglePassword">
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-top-item4">
+                                    <label>nhập lại mật khẩu mới</label>
+                                    <div class="box-password">
+                                        <input type="password" name="renewpassword">
+                                        <img src="images/eye.svg" id="togglePassword">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>      
+            </div>
+            <div class="mainbottom">
+                <div class="form-button">
+                        <button class="save-profile-btn">Lưu lại</button>
+                    </div>
+            </div>
+    	</div>
+    </div>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script>
+
+
+      $(document).ready(function(){
+        $(".nav-toggle").click(function(){
+           $(".nav-content").toggleClass("nav-active");
+           $(".nav-toggle").toggleClass("toggle");
+           $(".flex-header").toggleClass("toggle");
+        });
+        $(".change-password").click(function(){
+           $(".form-top-item4-form").toggleClass("pass-form");
+           $(".active-passbtn").toggleClass("passremoveform");
+        });
+      });
+
+
+     
+</script>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+</body>
+</html>

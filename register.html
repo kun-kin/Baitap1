@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register</title>
+	<link rel="icon" href="images/logo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/css/register.css">
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<div class="header">
+		<div class="container container-login">
+			<div class="flex-header">
+				<div class="header-item">
+					<img src="images/logo.png">
+				</div>
+				<div class="header-item">
+					<div class="header-item-cont">
+						<div class="header-item-cont-icons"><a href="#"><img src="images/phone.png"></a></div>
+						<div class="header-item-cont-link"><a id="phone" href="tel:(+1) 5146974413">(+1) 514 697 4413</a></div>
+					</div>
+					
+					<div class="header-item-cont">
+						<div class="header-item-cont-icons"><a href="#"><img src="images/email.png"></a></div>
+						<div class="header-item-icons-link"><a id="mail" href="mailto:contact@newgenpharma.com">contact@newgenpharma.com</a></div>
+					</div>
+					<div class="header-item-cont">
+						<div class="header-item-cont-span"><span id="rectangle">|</span></div>
+					    <div class="header-item-cont-icons"><a href="#"><img src="images/facebook.png"></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+				<!-- End sc-banner -->
+
+	<div class="main">
+		<div class="container container-main">
+			<div class="login-form">
+				<form action="" class="form">
+					<div><h2>Đăng Ký</h2></div>
+					<div class="form-header">
+						<span>Bạn đã có tài khoản?</span>
+						<a href="login.html" id="login">Đăng nhập</a>
+					</div>
+					<div class="form-main">
+						<label>Tên đăng nhập</label>
+						<div class="input-box">
+	                        <input type="text" value="" placeholder="toan.thien@example.com">
+	                    </div>
+	                    <label>Mật Khẩu</label>
+						<div class="input-box box-password">
+	                        <input type="password" value="1234567890" id="password">
+	                        <img src="images/eye.svg" id="togglePassword">
+	                    </div>
+	                    <label>Nhập Lại Mật Khẩu</label>
+						<div class="input-box box-password1">
+	                        <input type="password" value="1234567890" id="password1">
+	                        <img src="images/eye.svg" id="togglePassword1">
+	                    </div>
+	                    <label>Email</label>
+						<div class="input-box box-email">
+	                        <input type="Email" value="" placeholder="toan.thien@example.com">
+	                        <a href="#" id="get-the-code"> Lấy mã</a>
+	                    </div>
+	                    <div class="verification-codes">
+	                    	<label id="verification-codes">Mã xác thực</label>
+	                    	<div class="verification-code-email"><input type="text" placeholder="Nhập mã xác nhận từ email đã nhập"></div>
+	                    </div>
+	                    <div>
+	                    	<button id="register" onclick="window.location.href='#'">Tạo tài khoản</button>
+	                    </div>
+                    </div>
+				</form>
+				
+			</div>
+		</div>
+	</div>
+				<!-- End sc-main -->
+
+	<div class="sc-footer">
+		<div class="container footer">
+		    <img src="images/footer.png">
+		</div>
+	</div>
+
+
+
+</body>
+<script src=""></script>
+<script src=""></script>
+<script type="text/javascript">
+	/*xem pass*/
+	  const togglePassword = document.querySelector('#togglePassword');
+	  const password = document.querySelector('#password');
+	 
+	  togglePassword.addEventListener('click', function (e) {
+	    // toggle the type attribute
+	    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+	    password.setAttribute('type', type);
+	    // toggle the eye slash icon
+	    this.classList.toggle('fa-eye-slash');
+	});
+</script>		
+</html>

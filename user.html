@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>User</title>
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/user.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/menu-responsive.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/header.css">
+
+	<script src="lib/js/jquery-3.6.0.js"></script>
+</head>
+<body>
+  <div class="header">
+       <div class="header-top"></div>
+       <div class="flex-header">
+           <div class="header-logo">
+               <img src="images/user/logo.png" class="logo">
+               <img src="images/user/logo1.png" class="logo1">
+           </div>
+           <div class="header-list">
+               <ul class="list">
+                   <li><a href="user.html">Trang chủ</a></li>
+                   <li><a href="chitiet.html">Thuê người chơi</a></li>
+                   <li><a href="thue.html">Đang theo dõi</a></li>
+                   
+               </ul>
+           </div>
+           <div class="header-icons">
+               <div class="btn-icons">
+                   <a href=""><img src="images/user/search.png"></a>
+                   <a href="" class="message" data-toggle="modal" data-target="#message"><img src="images/user/messages.png"></a>
+                   <a href=""><img src="images/user/bell.png"></a>
+               </div>
+               <div class="btn-icons1">
+                   <a href=""><img src="images/chitiet/btn.svg"></a>
+                   <a href="" class="message" data-toggle="modal" data-target="#message"><img src="images/chitiet/btn1.svg"></a>
+                   <a href=""><img src="images/chitiet/btn2.svg"></a>
+               </div>
+               <div class="profile">
+                    <div class="dropdown">
+                      <button class="dropbtn">
+                          <img src="images/user/profile.png">
+                          <div class="dropbtn-profile">
+                              <p>HoangNguyen</p>
+                              <p><span>15,000</span> đ</p>
+                          </div>
+                      </button>
+                      <div class="dropdown-content">
+                            <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Nạp tiền</a>
+                            <a href="#">Rút tiền</a>
+                            <a href="lichsu.html">Lịch sử giao dịch</a>
+                            <a href="profile.html">Cài đặt tài khoản</a>
+                            <a href="#">Đăng xuất</a>
+                      </div>
+                    </div>
+               </div>
+            
+           </div>
+           <span class="nav-toggle">
+               <span></span>
+           </span>
+           
+       </div>   
+    </div>
+	<!-- end header -->
+	<div class="nav-content">
+		<div class="nav-content-top">
+		<div class="nav-content-profile">
+			<div> <img src="images/user/profile.png"></div>
+            <div class="dropbtn-profile">
+              <p>HoangNguyen</p>
+              <p><span>15,000</span> đ</p>
+            </div>
+		</div>
+		<div class="nav-content-list">
+			<ul>
+                <li><a href="user.html">Trang chủ</a></li>
+                <li><a href="chitiet.html">Thuê người chơi</a></li>
+                <li><a href="thue.html">Đang theo dõi</a></li>
+            </ul>
+		</div>
+		</div>
+		<div class="text-center">
+			<button class="btn-logout">Đăng xuất</button>
+		</div> 
+    </div>
+
+      <!-- Modal -->
+<div class="modal fade admid" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">nạp tiền vào 5me.onl</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+              <img src="images/chitiet/close.svg">
+          </span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien1.png"></div>
+              <div class="modal-admid-item">
+                  <p>Chuyển khoản qua ngân hàng</p>
+                  <p>Miễn phí. Hỗ trợ 8:30 - 22:00 hàng ngày (trừ chủ nhật và các ngày lễ)</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien2.png"></div>
+              <div class="modal-admid-item">
+                  <p>Nạp tiền bằng thẻ cào Player Code</p>
+                  <p>Player code</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien3.png"></div>
+              <div class="modal-admid-item">
+                  <p>Nạp tiền bằng thẻ cào điện thoại</p>
+                  <p>Mobile card</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien4.png"></div>
+              <div class="modal-admid-item">
+                  <p>Thanh toán trực tiếp qua Internet Banking</p>
+                  <p>Phí 1.760đ + 3% giá trị nạp</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien5.png"></div>
+              <div class="modal-admid-item">
+                  <p>Thanh toán trực tiếp qua Visa / Master Card</p>
+                  <p>Phí 5.000đ + 7% giá trị nạp</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien6.png"></div>
+              <div class="modal-admid-item">
+                  <p>Thanh toán trực tiếp qua QR code</p>
+                  <p>Phí 3% giá trị nạp</p>
+              </div>
+          </div>
+          <div class="modal-admid">
+              <div class="modal-admid-item"><img src="images/naptien7.png"></div>
+              <div class="modal-admid-item">
+                  <p>Thanh toán qua Paypal</p>
+                  <p>Phí tùy vào đại lý</p>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- sdsddddđ -->
+	<!-- main container -->
+	<div class="content">
+		<div class="flex-content">
+<!-- CONTENT 1 -->
+
+			<div class="content-item">
+				<div class="content-item-contact">
+				 	 <p>TOP ĐẠI GIA TUẦN</p>
+				 	 <img src="images/user/top.png">
+			    </div>
+				<div class="content-item-contact">
+				 	 <p>TOP ĐẠI GIA THÁNG</p>
+				 	 <img src="images/user/top1.png">
+				</div>
+				<div class="content-item-contact">
+				 	 <p>TOP ĐẠI GIA</p>
+				 	 <img src="images/user/top2.png">
+				</div>
+			</div>
+<!-- CONTENT 2 -->
+			<div class="content-item">
+				<div class="content-item-form">
+					<div class="form-firth">
+						<div class="form-item1">
+							<img src="images/user/face.png">
+						</div>
+						<div class="form-item1">
+							<p >Nguyễn Đình Trần Thiện</p>
+							<p>19/01/2021 - 20:32</p>
+						</div>
+					</div>
+					<div class="form-label">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+					</div>
+					<div class="form-main">
+						<img src="images/user/main.png">
+					</div>
+					
+					<div class="form-like">
+						<img src="images/user/heart.png">
+						<p><span>15</span>  người thích bài viết này</p>
+					</div>
+					<div class="form-contact">
+						<form action="" method="post">
+							<img src="images/user/face.png">
+						  <input type="text" name="contact" placeholder="Viết bình luận">
+						</form>
+					</div>
+				</div>
+
+				<!-- aaaaaaaaaaaaaaaaaa -->
+				<div class="content-item-form">
+					<div class="form-firth">
+						<div class="form-item1">
+							<img src="images/user/face.png">
+						</div>
+						<div class="form-item1">
+							<p >Nguyễn Đình Trần Thiện</p>
+							<p>19/01/2021 - 20:32</p>
+						</div>
+					</div>
+					<div class="form-label">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+					</div>
+					<div class="form-main">
+						<div class="form-main-img"><img src="images/user/rectangle.png"></div>
+						<div class="form-main-img"><img src="images/user/rectangle1.png"></div>
+						<div class="form-main-img"><img src="images/user/rectangle4.png"></div>
+						<div class="form-main-img"><img src="images/user/rectangle3.png"></div>
+						<div class="form-main-img"><img src="images/user/rectangle2.png"></div>
+				
+							
+					</div>
+					<div class="form-like">
+						<img src="images/user/heart.png">
+						<p><span>15</span>  người thích bài viết này</p>
+					</div>
+					<div class="form-contact">
+						<form action="" method="post">
+							 <img src="images/user/face.png">
+						    <input type="text" name="contact" placeholder="Viết bình luận">
+						</form>
+					</div>
+				</div>
+			</div>
+
+<!-- CONTENT 3 -->
+			<div class="content-item">
+				<p class="p-contact">TRÒ CHUYỆN</p>
+				<div class="contact">
+					<div class="contact-item">
+						<div class="contact-item1">
+							<div><img src="https://th.bing.com/th/id/R.b3948805dd078d056fb23e2a315b54cb?rik=HaAgpJ70tGVuWw&pid=ImgRaw&r=0&sres=1&sresct=1"></div>
+							<div class="item1-cont">
+								<p>LinhTranDang</p>
+								<p>16 phút trước</p>
+							</div>
+						</div>
+						<div class="contact-item2">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore tempor incididunt ut labore</p>
+						</div>
+						
+					</div>
+					<div class="contact-item">
+						
+						<div class="contact-item1">
+							<div><img src="images/user/contact1.png"></div>
+							<div class="item1-cont">
+								<p>LinhTranDang</p>
+								<p>8 phút trước</p>
+							</div>
+						</div>
+						<div class="contact-item2">
+							<p>Lorem ipsum dolor sit amet, consectetur </p>
+						</div>
+						
+					</div>
+					<div class="contact-item">
+						
+						<div class="contact-item1">
+							<div><img src="images/user/contact2.png"></div>
+							<div class="item1-cont">
+								<p>LinhTranDang</p>
+								<p>5 phút trước</p>
+							</div>
+						</div>
+						<div class="contact-item2">
+							<p>Lorem ipsum dolor sit amet, consectetur </p>
+						</div>
+						
+					</div>
+					<div class="contact-item">
+						<div class="contact-item1">
+							<div><img src="images/user/contact3.png"></div>
+							<div class="item1-cont">
+								<p>LinhTranDang</p>
+								<p>1 phút trước</p>
+							</div>
+						</div>
+						<div class="contact-item2">
+							<p>Lorem ipsum dolor sit amet, consectetur </p>
+						</div>
+					</div>
+					<form action="" method="post">
+					<input type="text" name="" placeholder="Nhập tin nhắn..." id="contact-input">
+					<button class="btn-contact"><img src="images/user/btn-contact.png"></button>
+				</form>
+				</div>
+				
+			</div>
+	    </div>
+
+	</div>
+</body>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript">
+	 $(".star.glyphicon").click(function() {
+	  $(this).toggleClass("glyphicon-star glyphicon-star-empty");
+	});
+
+   $(".heart.fa").click(function() {
+     $(this).toggleClass("fa-heart fa-heart-o");
+   });
+</script> -->
+
+<script>
+
+
+      $(document).ready(function(){
+
+        $(".nav-toggle").click(function(){
+           $(".nav-content").toggleClass("nav-active");
+           $(".nav-toggle").toggleClass("toggle");
+           $(".flex-header").toggleClass("toggle");
+
+        });
+
+      });
+
+
+     
+</script>
+</html>
